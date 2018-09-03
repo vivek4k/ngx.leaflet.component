@@ -1,4 +1,4 @@
-# ngx.leaflet.component  ![alt text](https://circleci.com/gh/elasticrash/ngx.leaflet.component.png?circle-token=8ce7131b0ea08b0ce9299e456bd9291dd3cf1ba4 "Build Status") 
+# ngx.leaflet.component  ![alt text](https://circleci.com/gh/elasticrash/ngx.leaflet.component.png?circle-token=8ce7131b0ea08b0ce9299e456bd9291dd3cf1ba4 "Build Status")
 
 ## Native Angular Components designed to be used directly on the templates without much customization
 
@@ -16,10 +16,18 @@ Examples sources can be found in the following github repository [here](https://
 
 Install
 ```terminal
-npm install ngx.leaflet.components
+npm install github:vivek4k/ngx.leaflet.components#SingletonL
+```
+```package.json
+  'ngx.leaflet.components': 'github:vivek4k/ngx.leaflet.components#SingletonL'
 ```
 
+
 USE
+
+```.angular-cli.json
+  scripts: ["../node_modules/leaflet/dist/leaflet.js", ...]
+```
 
 ```javascript
 import { ngxLeafletModule } from 'ngx.leaflet.components';

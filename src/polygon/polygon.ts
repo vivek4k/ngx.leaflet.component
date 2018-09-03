@@ -8,7 +8,7 @@ import { GuidService } from '../services/globalId.service';
 import { HelperService } from '../services/helper.service';
 import { CoordinateHandler } from '../helpers/coordinateHandler';
 import { path } from '../models/path';
-import * as L from 'leaflet';
+declare var L:any;
 
 
 @Component({

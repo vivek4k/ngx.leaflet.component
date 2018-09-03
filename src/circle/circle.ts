@@ -7,7 +7,7 @@ import { PopupService } from '../services/popup.service';
 import { CoordinateHandler } from '../helpers/coordinateHandler';
 import { path } from '../models/path';
 import { Ipath } from '../interfaces/path';
-import * as L from 'leaflet';
+declare var L:any;
 
 
 @Component({
@@ -24,13 +24,13 @@ export class CircleElement extends CoordinateHandler {
   @Input() onclick: string | undefined = undefined;
   @Input() Options: any = new path(null);
   @ViewChild('ngel') ngEl: ElementRef;
-  
+
   public circle: any = null;
 
   constructor(
     private mapService: MapService,
     private popupService: PopupService,
-    @Optional() private groupService?: GroupService,        
+    @Optional() private groupService?: GroupService,
     @Optional() private LeafletElement?: LeafletElement,
     @Optional() private LeafletGroup?: LeafletGroup) {
     super();

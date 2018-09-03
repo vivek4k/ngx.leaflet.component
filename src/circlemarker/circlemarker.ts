@@ -7,7 +7,7 @@ import { PopupService } from '../services/popup.service';
 import { CoordinateHandler } from '../helpers/coordinateHandler';
 import { path } from '../models/path';
 import { Ipath } from '../interfaces/path';
-import * as L from 'leaflet';
+declare var L:any;
 
 
 @Component({

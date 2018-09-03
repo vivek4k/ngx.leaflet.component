@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MapService } from '../services/map.service';
-import * as L from 'leaflet';
+declare var L:any;
 
 
 @Component({

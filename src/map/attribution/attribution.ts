@@ -2,7 +2,7 @@ import { Component, Input, Optional } from '@angular/core';
 import { LeafletElement } from '../map';
 import { MapService } from '../../services/map.service';
 import { attributionModel } from '../../models/attributionModel';
-import * as L from 'leaflet';
+declare var L:any;
 
 
 @Component({

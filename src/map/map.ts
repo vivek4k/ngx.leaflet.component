@@ -1,7 +1,7 @@
 import { Component, Input, ViewChild, ElementRef } from '@angular/core';
 import { MapService } from '../services/map.service';
 import { CoordinateHandler } from '../helpers/coordinateHandler';
-import * as L from 'leaflet';
+declare var L:any;
 
 @Component({
   selector: 'leaf-element',

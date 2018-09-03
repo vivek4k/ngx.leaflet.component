@@ -1,7 +1,7 @@
 import { Component, Input, Optional } from '@angular/core';
 import { MapService } from '../../services/map.service';
 import { LeafletElement } from '../map';
-import * as L from 'leaflet';
+declare var L:any;
 
 @Component({
     selector: 'watermark-element',

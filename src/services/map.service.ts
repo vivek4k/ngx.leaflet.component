@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import * as L from 'leaflet';
+declare var L:any;
 
 
 @Injectable()

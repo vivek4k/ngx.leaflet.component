@@ -8,7 +8,7 @@ import { GuidService } from '../services/globalId.service';
 import { HelperService } from '../services/helper.service';
 import { GeoJSONCoordinateHandler } from '../helpers/geoJsonReader';
 
-import * as L from 'leaflet';
+declare var L:any;
 
 @Component({
   selector: 'geojson-element',

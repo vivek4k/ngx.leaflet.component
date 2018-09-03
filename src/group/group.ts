@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { MapService } from '../services/map.service';
 import { GroupService } from '../services/group.service';
 import { GuidService } from '../services/globalId.service';
-import * as L from 'leaflet';
+declare var L:any;
 
 
 @Component({

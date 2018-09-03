@@ -2,7 +2,7 @@ import { Component, Input, Optional } from '@angular/core';
 import { LeafletElement } from '../map/map';
 import { MapService } from '../services/map.service';
 import { CoordinateHandler } from '../helpers/coordinateHandler';
-import * as L from 'leaflet';
+declare var L:any;
 
 
 @Component({

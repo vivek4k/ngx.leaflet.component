@@ -1,0 +1,30 @@
+import { ElementRef } from '@angular/core';
+import { Http } from '@angular/http';
+import { MapService } from '../services/map.service';
+import { GroupService } from '../services/group.service';
+import { PopupService } from '../services/popup.service';
+import { LeafletElement } from '../map/map';
+import { LeafletGroup } from '../group/group';
+import { CoordinateHandler } from '../helpers/coordinateHandler';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
+export declare class MarkerElement extends CoordinateHandler {
+    private mapService;
+    private popupService;
+    private http;
+    private groupService;
+    private LeafletElement;
+    private LeafletGroup;
+    lat: number;
+    lon: number;
+    mouseover: string | undefined;
+    onclick: string | undefined;
+    iconUrl: string;
+    ngEl: ElementRef;
+    marker: any;
+    constructor(mapService: MapService, popupService: PopupService, http: Http, groupService?: GroupService, LeafletElement?: LeafletElement, LeafletGroup?: LeafletGroup);
+    ngOnInit(): void;
+    createMarkerlayer(marker: any, map: any): void;
+    imageExists(url: any, callback: any): void;
+    getImage(): any;
+}
